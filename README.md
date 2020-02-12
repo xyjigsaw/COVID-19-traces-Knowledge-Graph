@@ -1,12 +1,10 @@
 # Covid-19-nCoV-traces-data
-Covid-19(2019-nCoV) traces data of the infected
+The project of Covid-19(2019-nCoV) patient-tracking data from Tencent news is based on Scrapy and PhantomJS.
 
-Based on Scrapy and PhantomJS
+## Preview of the data
 
-From Tencent News
-
-Preview of the data
+More than 2000 cases
 
 ![](https://github.com/xyjigsaw/COVID-19-nCoV-traces-data/blob/master/DEMO.png)
 
-Welcome to visit [OmegaXYZ](https://www.omegaxyz.com).
+Find more on [OmegaXYZ](https://www.omegaxyz.com).
