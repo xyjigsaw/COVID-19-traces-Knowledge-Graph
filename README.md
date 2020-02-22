@@ -2,6 +2,11 @@
 The project of Covid-19(2019-nCoV) patient-tracking data from Tencent news is based on Scrapy, PhantomJS and HanLP.
 HanLP is used to recognize entity(Location, Time, Action etc.) and extract events.
 
+## Features
+- Structured Traces Data
+- Event Extraction
+- LDA Model Based Topic Classification
+
 ## Preview of the data
 
 More than 3000 cases
