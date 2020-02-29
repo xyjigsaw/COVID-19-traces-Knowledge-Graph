@@ -8,6 +8,17 @@ HanLP is used to recognize entity(Location, Time, Action etc.) and extract event
 - LDA Model Based Topic Classification
 - Knowledge Graph Triples(Patient, Time, Location, Traces...)
 
+# KG TABLE
+- event：e_id, time, text
+- patient：e_id, name, age, gender
+- location：l_id, location
+- topic：t_id, topic
+- event-location：id, e_id, l_id
+- event-topic:id, e_id, t_id
+- patient-event：id, p_id, e_id
+- patient-location：id, p_id, l_id
+
+
 ## Preview of the data
 
 More than 4000 cases
