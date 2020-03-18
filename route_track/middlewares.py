@@ -110,14 +110,19 @@ class RouteTrackDownloaderMiddleware(object):
 
 class JSMiddleware(object):
     def process_request(self, request, spider):
-        driver = webdriver.PhantomJS("/Users/reacubeth/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs")  # 指定使用的浏览器
+
+        driver = webdriver.PhantomJS("/Users/reacubeth/Documents/其他/phantomjs-2.1.1-macosx/bin/phantomjs")  # 指定使用的浏览器
         driver.get(request.url)
+        try:
+            driver.find_element_by_css_selector("[class='jsx-2571554496 btn disagree']").click()
+        except Exception:
+            pass
         time.sleep(1)
         # js = "var q=document.documentElement.scrollTop=10000"
         js = "window.scrollTo(0,document.body.scrollHeight)"
-        for i in range(250):
+        for i in range(600):
             driver.execute_script(js)
-            time.sleep(random.randint(1, 3))
+            time.sleep(random.randint(1, 2))
 
         body = driver.page_source
         print("访问" + request.url)

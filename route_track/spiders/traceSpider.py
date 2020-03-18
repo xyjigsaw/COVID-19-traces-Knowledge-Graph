@@ -29,37 +29,39 @@ class traceSpider(CrawlSpider):
         item['description'] = []
         item['traces'] = []
         item['source'] = []
-        root_info = response.xpath('//div[@class="jsx-2527464865 root"]').extract()
+        root_info = response.xpath('//div[@class="jsx-3880263099 root"]').extract()
+        print('@', response.xpath('//text()'))
         for ri in root_info:
             html_tree = etree.HTML(ri)
             try:
-                loc_tmp = html_tree.xpath('//p[@class="jsx-2527464865 item location"]/span/text()')
+                loc_tmp = html_tree.xpath('//p[@class="jsx-3880263099 item location"]/span/text()')
                 item['location'].extend(loc_tmp)
             except:
+                print('?????', loc_tmp)
                 item['location'].extend(' ')
             try:
-                time_tmp = html_tree.xpath('//p[@class="jsx-2527464865 item pubtime"]/span/text()')
+                time_tmp = html_tree.xpath('//p[@class="jsx-3880263099 item pubtime"]/span/text()')
                 item['pubtime'].extend(time_tmp)
             except:
                 item['pubtime'].extend(' ')
             try:
-                info_tmp = html_tree.xpath('//p[@class="jsx-2527464865 item info"]/span/text()')
+                info_tmp = html_tree.xpath('//p[@class="jsx-3880263099 item info"]/span/text()')
                 item['info'].extend(info_tmp)
             except:
                 item['info'].extend(' ')
             try:
-                des_tmp = html_tree.xpath('//p[@class="jsx-2527464865 item other"]/span/text()')
+                des_tmp = html_tree.xpath('//p[@class="jsx-3880263099 item other"]/span/text()')
                 item['description'].extend(des_tmp)
             except:
                 item['description'].extend(' ')
             try:
-                src_tmp = html_tree.xpath('//p[@class="jsx-2527464865 source"]/a/text()')
+                src_tmp = html_tree.xpath('//p[@class="jsx-3880263099 source"]/a/text()')
                 item['source'].extend(src_tmp)
             except:
                 item['source'].extend(' ')
 
             try:
-                traces_tmp = html_tree.xpath('//ol[@class="jsx-2527464865 traces"]//li/p//text()')
+                traces_tmp = html_tree.xpath('//ol[@class="jsx-3880263099 traces"]//li/p//text()')
                 dicx = dict(zip(traces_tmp[::2], traces_tmp[1::2]))
                 item['traces'].append(str(dicx))
             except:
