@@ -34,4 +34,4 @@ Please visit another [repository](https://github.com/xyjigsaw/Knowledge-Graph-An
 ![](https://github.com/xyjigsaw/COVID-19-nCoV-traces-data/blob/master/KG-3D-2.png)
 
 
-Find more on [NCP-Acemap](https://ncp.acemap.info).
+Find more on [NCP-Acemap](http://ncp.acemap.info/#tab=map).
