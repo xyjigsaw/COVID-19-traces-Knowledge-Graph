@@ -25,4 +25,13 @@ More than 4000 cases
 
 ![](https://github.com/xyjigsaw/COVID-19-nCoV-traces-data/blob/master/DEMO.png)
 
-Find more on [OmegaXYZ](https://www.omegaxyz.com).
+
+## KG Visualization
+
+Please visit another [repository](https://github.com/xyjigsaw/Knowledge-Graph-And-Visualization-Demo)
+![](https://github.com/xyjigsaw/COVID-19-nCoV-traces-data/blob/master/KG-Search3.png)
+
+![](https://github.com/xyjigsaw/COVID-19-nCoV-traces-data/blob/master/KG-3D-2.png)
+
+
+Find more on [NCP-Acemap](https://ncp.acemap.info).
